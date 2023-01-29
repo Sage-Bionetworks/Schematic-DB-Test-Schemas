@@ -1989,7 +1989,7 @@
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:patientID"
+                    "@id": "bts:patientId"
                 },
                 {
                     "@id": "bts:sex"
@@ -2007,17 +2007,17 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:patientID",
+            "@id": "bts:patientId",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "patientID",
+            "rdfs:label": "patientId",
             "schema:domainIncludes": {
                 "@id": "bts:Biospecimen"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Patient ID",
+            "sms:displayName": "Patient Id",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
@@ -2136,10 +2136,10 @@
             ],
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:biospecimenID"
+                    "@id": "bts:biospecimenId"
                 },
                 {
-                    "@id": "bts:patientID"
+                    "@id": "bts:patientId"
                 },
                 {
                     "@id": "bts:tissueStatus"
@@ -2153,17 +2153,17 @@
             ]
         },
         {
-            "@id": "bts:biospecimenID",
+            "@id": "bts:biospecimenId",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "biospecimenID",
+            "rdfs:label": "biospecimenId",
             "schema:domainIncludes": {
                 "@id": "bts:BulkRNA-seqAssay"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Biospecimen ID",
+            "sms:displayName": "Biospecimen Id",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
@@ -2219,7 +2219,7 @@
                     "@id": "bts:filename"
                 },
                 {
-                    "@id": "bts:biospecimenID"
+                    "@id": "bts:biospecimenId"
                 },
                 {
                     "@id": "bts:fileFormat"
