@@ -1,5 +1,5 @@
 Attribute,Valid Values,DependsOn,Properties,Required,DependsOn Component,Validation Rules,Description,Parent,Source
-Patient,,"Patient Id, Sex, Year of Birth, Diagnosis, Component","Patient Id, Sex, Year of Birth, Diagnosis",FALSE,,,,,
+Patient,,"Patient Id, Sex, Year of Birth, Diagnosis, Weight, Component","Patient Id, Sex, Year of Birth, Diagnosis, Weight, Diagnosis",FALSE,,,,,
 Patient Id,,,,TRUE,,str,,,
 Sex,"Female, Male, Other",,,TRUE,,str,,,
 Year of Birth,,,,FALSE,,int::inRange 1900 2050,,,

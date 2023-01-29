@@ -2001,6 +2001,9 @@
                     "@id": "bts:diagnosis"
                 },
                 {
+                    "@id": "bts:weight"
+                },
+                {
                     "@id": "bts:Component"
                 }
             ],
@@ -2070,15 +2073,13 @@
             ]
         },
         {
-            "@id": "bts:Weight",
-            "@type": "rdfs:Class",
+            "@id": "bts:weight",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Weight",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "weight",
+            "schema:domainIncludes": {
+                "@id": "bts:Patient"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
