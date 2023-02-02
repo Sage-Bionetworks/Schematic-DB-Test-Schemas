@@ -2055,15 +2055,13 @@
             ]
         },
         {
-            "@id": "bts:YearOfBirth",
-            "@type": "rdfs:Class",
+            "@id": "bts:yearOfBirth",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "YearOfBirth",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "schema:Thing"
-                }
-            ],
+            "rdfs:label": "yearOfBirth",
+            "schema:domainIncludes": {
+                "@id": "bts:Patient"
+            },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2282,21 +2280,6 @@
             "sms:validationRules": [
                 "str"
             ]
-        },
-        {
-            "@id": "bts:yearOfBirth",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "yearOfBirth",
-            "schema:domainIncludes": {
-                "@id": "bts:Patient"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "year _of _birth",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
         },
         {
             "@id": "bts:tissueStatus",
