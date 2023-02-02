@@ -2159,7 +2159,7 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "biospecimenId",
             "schema:domainIncludes": {
-                "@id": "bts:BulkRNA-seqAssay"
+                "@id": "bts:BulkRnaSeq"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2196,10 +2196,10 @@
             ]
         },
         {
-            "@id": "bts:BulkRNA-seqAssay",
+            "@id": "bts:BulkRnaSeq",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "BulkRNA-seqAssay",
+            "rdfs:label": "BulkRnaSeq",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -2208,7 +2208,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Bulk RNA-seq Assay",
+            "sms:displayName": "Bulk Rna Seq",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -2237,7 +2237,7 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "filename",
             "schema:domainIncludes": {
-                "@id": "bts:BulkRNA-seqAssay"
+                "@id": "bts:BulkRnaSeq"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2254,7 +2254,7 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "fileFormat",
             "schema:domainIncludes": {
-                "@id": "bts:BulkRNA-seqAssay"
+                "@id": "bts:BulkRnaSeq"
             },
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
@@ -2405,7 +2405,7 @@
             "rdfs:label": "FASTQ",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:BulkRNA-seqAssay"
+                    "@id": "bts:BulkRnaSeq"
                 }
             ],
             "schema:isPartOf": {
@@ -2422,7 +2422,7 @@
             "rdfs:label": "BAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:BulkRNA-seqAssay"
+                    "@id": "bts:BulkRnaSeq"
                 }
             ],
             "schema:isPartOf": {
@@ -2439,7 +2439,7 @@
             "rdfs:label": "CRAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:BulkRNA-seqAssay"
+                    "@id": "bts:BulkRnaSeq"
                 }
             ],
             "schema:isPartOf": {
@@ -2456,7 +2456,7 @@
             "rdfs:label": "CSV/TSV",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:BulkRNA-seqAssay"
+                    "@id": "bts:BulkRnaSeq"
                 }
             ],
             "schema:isPartOf": {
