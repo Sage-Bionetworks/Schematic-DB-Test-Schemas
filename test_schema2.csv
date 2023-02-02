@@ -1,0 +1,13 @@
+Attribute,Valid Values,DependsOn,Properties,Required,DependsOn Component,Validation Rules,Description,Parent,Source
+patient,,"patient_id , sex, year _of _birth, diagnosis, weight, Component","patient_id , sex, year _of _birth, diagnosis, weight",FALSE,,,,,
+patient_id,,,,TRUE,,str,,,
+sex,"Female, Male, Other",,,TRUE,,str,,,
+year_of_birth,,,,FALSE,,int::inRange 1900 2050,,,
+weight,,,,FALSE,,float::inRange 0 1000,,,
+diagnosis,"Healthy, Cancer",,,TRUE,,str,,,
+biospecimen,,"biospecimen_id, patient_id, tissue_status, Component","biospecimen_id, patient_id, tissue_status",FALSE,patient,str,,,
+biospecimen_id,,,,TRUE,,str,,,
+tissue _status,"Healthy, Malignant",,,TRUE,,str,,,
+bulk_rnaseq_assay,,"filename, biospecimen_id, file_format, Component","filename, biospecimen_id, file_format",FALSE,biospecimen,,,,
+filename,,,,TRUE,,str,,,
+file_format,"FASTQ, BAM, CRAM, CSV/TSV",,,TRUE,,str,,,
