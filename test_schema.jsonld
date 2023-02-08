@@ -2004,6 +2004,9 @@
                     "@id": "bts:weight"
                 },
                 {
+                    "@id": "bts:date"
+                },
+                {
                     "@id": "bts:Component"
                 }
             ],
@@ -2113,6 +2116,23 @@
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
+            ]
+        },
+        {
+            "@id": "bts:date",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "date",
+            "schema:domainIncludes": {
+                "@id": "bts:Patient"
+            },
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Date",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "date"
             ]
         },
         {
