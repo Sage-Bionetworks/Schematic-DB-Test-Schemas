@@ -1973,6 +1973,31 @@
             }
         },
         {
+            "@id": "bts:id",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "id",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patient"
+                },
+                {
+                    "@id": "bts:Biospecimen"
+                },
+                {
+                    "@id": "bts:BulkRnaSeq"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "id",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
             "@id": "bts:Patient",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -1989,7 +2014,7 @@
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:patientId"
+                    "@id": "bts:id"
                 },
                 {
                     "@id": "bts:sex"
@@ -2013,30 +2038,15 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:patientId",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "patientId",
-            "schema:domainIncludes": {
-                "@id": "bts:Biospecimen"
-            },
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Patient Id",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
             "@id": "bts:sex",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "sex",
-            "schema:domainIncludes": {
-                "@id": "bts:Patient"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2062,9 +2072,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "yearofBirth",
-            "schema:domainIncludes": {
-                "@id": "bts:Patient"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2080,9 +2092,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "weight",
-            "schema:domainIncludes": {
-                "@id": "bts:Patient"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2098,9 +2112,14 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "diagnosis",
-            "schema:domainIncludes": {
-                "@id": "bts:Patient"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patient"
+                },
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2123,9 +2142,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "date",
-            "schema:domainIncludes": {
-                "@id": "bts:Patient"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2157,7 +2178,7 @@
             ],
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:biospecimenId"
+                    "@id": "bts:id"
                 },
                 {
                     "@id": "bts:patientId"
@@ -2174,30 +2195,32 @@
             ]
         },
         {
-            "@id": "bts:biospecimenId",
+            "@id": "bts:patientId",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "biospecimenId",
-            "schema:domainIncludes": {
-                "@id": "bts:BulkRnaSeq"
-            },
+            "rdfs:label": "patientId",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Biospecimen"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Biospecimen Id",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
+            "sms:displayName": "Patient Id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
         },
         {
             "@id": "bts:tissueStatus",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "tissueStatus",
-            "schema:domainIncludes": {
-                "@id": "bts:Biospecimen"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Biospecimen"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2237,6 +2260,9 @@
             ],
             "sms:requiresDependency": [
                 {
+                    "@id": "bts:id"
+                },
+                {
                     "@id": "bts:filename"
                 },
                 {
@@ -2252,13 +2278,32 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:biospecimenId",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "biospecimenId",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:BulkRnaSeq"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Biospecimen Id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:filename",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "filename",
-            "schema:domainIncludes": {
-                "@id": "bts:BulkRnaSeq"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:BulkRnaSeq"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2273,9 +2318,11 @@
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "fileFormat",
-            "schema:domainIncludes": {
-                "@id": "bts:BulkRnaSeq"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:BulkRnaSeq"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
@@ -2375,6 +2422,9 @@
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Patient"
+                },
+                {
+                    "@id": "bts:Patient"
                 }
             ],
             "schema:isPartOf": {
@@ -2390,6 +2440,9 @@
             "rdfs:comment": "TBD",
             "rdfs:label": "Cancer",
             "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Patient"
+                },
                 {
                     "@id": "bts:Patient"
                 }
