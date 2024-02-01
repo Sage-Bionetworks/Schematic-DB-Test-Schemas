@@ -55,7 +55,7 @@
                     "@id": "bts:sex"
                 },
                 {
-                    "@id": "bts:yearofBirth"
+                    "@id": "bts:YearOfBirth"
                 },
                 {
                     "@id": "bts:diagnosis"
@@ -103,21 +103,24 @@
             ]
         },
         {
-            "@id": "bts:yearofBirth",
-            "@type": "rdf:Property",
+            "@id": "bts:YearOfBirth",
+            "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "yearofBirth",
-            "schema:domainIncludes": [
+            "rdfs:label": "YearOfBirth",
+            "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Patient"
+                    "@id": "bts:Thing"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Year of Birth",
+            "sms:displayName": "Year_Of_Birth",
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:validationRules": [
+                "int",
+                "inRange 1900 2050"
+            ]
         },
         {
             "@id": "bts:diagnosis",
@@ -203,6 +206,23 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:yearofBirth",
+            "@type": "rdf:Property",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "yearofBirth",
+            "schema:domainIncludes": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Year of Birth",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:Female",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -254,26 +274,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:YearOfBirth",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "YearOfBirth",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "year_of_birth",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "int",
-                "inRange 1900 2050"
-            ]
-        },
-        {
             "@id": "bts:Healthy",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -283,7 +283,7 @@
                     "@id": "bts:diagnosis"
                 },
                 {
-                    "@id": "bts:TissueStatus"
+                    "@id": "bts:tissueStatus"
                 }
             ],
             "schema:isPartOf": {
@@ -361,7 +361,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Patient Id",
+            "sms:displayName": "Patient_Id",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -373,40 +373,6 @@
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Biospecimen"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Tissue Status",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:PatientId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "PatientId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Patient_Id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TissueStatus",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "TissueStatus",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
                 }
             ],
             "schema:isPartOf": {
@@ -433,7 +399,7 @@
             "rdfs:label": "Malignant",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:TissueStatus"
+                    "@id": "bts:tissueStatus"
                 }
             ],
             "schema:isPartOf": {
@@ -514,7 +480,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Biospecimen Id",
+            "sms:displayName": "Biospecimen_Id",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -526,40 +492,6 @@
             "schema:domainIncludes": [
                 {
                     "@id": "bts:BulkRnaSeq"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "File Format",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:BiospecimenId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "BiospecimenId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Biospecimen_Id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:FileFormat",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "FileFormat",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
                 }
             ],
             "schema:isPartOf": {
@@ -592,7 +524,7 @@
             "rdfs:label": "FASTQ",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:FileFormat"
+                    "@id": "bts:fileFormat"
                 }
             ],
             "schema:isPartOf": {
@@ -609,7 +541,7 @@
             "rdfs:label": "BAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:FileFormat"
+                    "@id": "bts:fileFormat"
                 }
             ],
             "schema:isPartOf": {
@@ -626,7 +558,7 @@
             "rdfs:label": "CRAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:FileFormat"
+                    "@id": "bts:fileFormat"
                 }
             ],
             "schema:isPartOf": {
@@ -643,7 +575,7 @@
             "rdfs:label": "CSV/TSV",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:FileFormat"
+                    "@id": "bts:fileFormat"
                 }
             ],
             "schema:isPartOf": {
