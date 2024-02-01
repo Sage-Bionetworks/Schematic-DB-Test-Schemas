@@ -52,19 +52,19 @@
                     "@id": "bts:id"
                 },
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 },
                 {
                     "@id": "bts:yearofBirth"
                 },
                 {
-                    "@id": "bts:diagnosis"
+                    "@id": "bts:Diagnosis"
                 },
                 {
-                    "@id": "bts:weight"
+                    "@id": "bts:Weight"
                 },
                 {
-                    "@id": "bts:date"
+                    "@id": "bts:Date"
                 },
                 {
                     "@id": "bts:Component"
@@ -73,10 +73,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:sex",
+            "@id": "bts:Sex",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "sex",
+            "rdfs:label": "Sex",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -123,10 +123,10 @@
             ]
         },
         {
-            "@id": "bts:diagnosis",
+            "@id": "bts:Diagnosis",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "diagnosis",
+            "rdfs:label": "Diagnosis",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -150,10 +150,10 @@
             ]
         },
         {
-            "@id": "bts:weight",
+            "@id": "bts:Weight",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "weight",
+            "rdfs:label": "Weight",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -170,10 +170,10 @@
             ]
         },
         {
-            "@id": "bts:date",
+            "@id": "bts:Date",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "date",
+            "rdfs:label": "Date",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -212,7 +212,7 @@
             "rdfs:label": "Female",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 }
             ],
             "schema:isPartOf": {
@@ -229,7 +229,7 @@
             "rdfs:label": "Male",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 }
             ],
             "schema:isPartOf": {
@@ -246,7 +246,7 @@
             "rdfs:label": "Other",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 }
             ],
             "schema:isPartOf": {
@@ -263,7 +263,7 @@
             "rdfs:label": "Healthy",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:diagnosis"
+                    "@id": "bts:Diagnosis"
                 },
                 {
                     "@id": "bts:tissueStatus"
@@ -283,7 +283,7 @@
             "rdfs:label": "Cancer",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:diagnosis"
+                    "@id": "bts:Diagnosis"
                 }
             ],
             "schema:isPartOf": {
@@ -417,7 +417,7 @@
                     "@id": "bts:id"
                 },
                 {
-                    "@id": "bts:filename"
+                    "@id": "bts:Filename"
                 },
                 {
                     "@id": "bts:biospecimenId"
@@ -432,10 +432,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:filename",
+            "@id": "bts:Filename",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "filename",
+            "rdfs:label": "Filename",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:BulkRnaSeq"
