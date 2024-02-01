@@ -104,12 +104,12 @@
         },
         {
             "@id": "bts:Year_Of_Birth",
-            "@type": "rdfs:Class",
+            "@type": "rdf:Property",
             "rdfs:comment": "TBD",
             "rdfs:label": "Year_Of_Birth",
-            "rdfs:subClassOf": [
+            "schema:domainIncludes": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "bts:Patient"
                 }
             ],
             "schema:isPartOf": {
@@ -202,23 +202,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Component",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:yearofBirth",
-            "@type": "rdf:Property",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "yearofBirth",
-            "schema:domainIncludes": [
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Year of Birth",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
