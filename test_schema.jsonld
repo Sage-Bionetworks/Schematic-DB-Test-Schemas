@@ -117,10 +117,7 @@
             },
             "sms:displayName": "Year of Birth",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "int",
-                "inRange 1900 2050"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:diagnosis",
@@ -257,6 +254,26 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:YearOfBirth",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "YearOfBirth",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "year_of_birth",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "int",
+                "inRange 1900 2050"
+            ]
+        },
+        {
             "@id": "bts:Healthy",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -266,7 +283,7 @@
                     "@id": "bts:diagnosis"
                 },
                 {
-                    "@id": "bts:tissueStatus"
+                    "@id": "bts:TissueStatus"
                 }
             ],
             "schema:isPartOf": {
@@ -361,6 +378,40 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
+            "sms:displayName": "Tissue Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:PatientId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "PatientId",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Patient_Id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TissueStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "TissueStatus",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
             "schema:rangeIncludes": [
                 {
                     "@id": "bts:Healthy"
@@ -369,7 +420,7 @@
                     "@id": "bts:Malignant"
                 }
             ],
-            "sms:displayName": "Tissue Status",
+            "sms:displayName": "Tissue_Status",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
@@ -382,7 +433,7 @@
             "rdfs:label": "Malignant",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:tissueStatus"
+                    "@id": "bts:TissueStatus"
                 }
             ],
             "schema:isPartOf": {
@@ -405,7 +456,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Bulk Rna Seq",
+            "sms:displayName": "Bulk_Rna_Seq",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -480,6 +531,40 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
+            "sms:displayName": "File Format",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:BiospecimenId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "BiospecimenId",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Biospecimen_Id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:FileFormat",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "FileFormat",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
             "schema:rangeIncludes": [
                 {
                     "@id": "bts:FASTQ"
@@ -494,7 +579,7 @@
                     "@id": "bts:CSV/TSV"
                 }
             ],
-            "sms:displayName": "File Format",
+            "sms:displayName": "File_Format",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
@@ -507,7 +592,7 @@
             "rdfs:label": "FASTQ",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:FileFormat"
                 }
             ],
             "schema:isPartOf": {
@@ -524,7 +609,7 @@
             "rdfs:label": "BAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:FileFormat"
                 }
             ],
             "schema:isPartOf": {
@@ -541,7 +626,7 @@
             "rdfs:label": "CRAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:FileFormat"
                 }
             ],
             "schema:isPartOf": {
@@ -558,7 +643,7 @@
             "rdfs:label": "CSV/TSV",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:FileFormat"
                 }
             ],
             "schema:isPartOf": {

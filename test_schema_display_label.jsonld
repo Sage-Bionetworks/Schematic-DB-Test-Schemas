@@ -20,7 +20,7 @@
                     "@id": "bts:Biospecimen"
                 },
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
                 }
             ],
             "schema:isPartOf": {
@@ -117,10 +117,7 @@
             },
             "sms:displayName": "Year of Birth",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "int",
-                "inRange 1900 2050"
-            ]
+            "sms:validationRules": []
         },
         {
             "@id": "bts:Diagnosis",
@@ -257,6 +254,26 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:year_of_birth",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "year_of_birth",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "year_of_birth",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "int",
+                "inRange 1900 2050"
+            ]
+        },
+        {
             "@id": "bts:Healthy",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -266,7 +283,7 @@
                     "@id": "bts:Diagnosis"
                 },
                 {
-                    "@id": "bts:tissueStatus"
+                    "@id": "bts:Tissue_Status"
                 }
             ],
             "schema:isPartOf": {
@@ -361,6 +378,40 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
+            "sms:displayName": "Tissue Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Patient_Id",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Patient_Id",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Patient_Id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Tissue_Status",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Tissue_Status",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
             "schema:rangeIncludes": [
                 {
                     "@id": "bts:Healthy"
@@ -369,7 +420,7 @@
                     "@id": "bts:Malignant"
                 }
             ],
-            "sms:displayName": "Tissue Status",
+            "sms:displayName": "Tissue_Status",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
@@ -382,7 +433,7 @@
             "rdfs:label": "Malignant",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:tissueStatus"
+                    "@id": "bts:Tissue_Status"
                 }
             ],
             "schema:isPartOf": {
@@ -393,10 +444,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:BulkRnaSeq",
+            "@id": "bts:Bulk_Rna_Seq",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "BulkRnaSeq",
+            "rdfs:label": "Bulk_Rna_Seq",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -405,7 +456,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Bulk Rna Seq",
+            "sms:displayName": "Bulk_Rna_Seq",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -438,7 +489,7 @@
             "rdfs:label": "Filename",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
                 }
             ],
             "schema:isPartOf": {
@@ -457,7 +508,7 @@
             "rdfs:label": "biospecimenId",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
                 }
             ],
             "schema:isPartOf": {
@@ -474,7 +525,41 @@
             "rdfs:label": "fileFormat",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "File Format",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Biospecimen_Id",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Biospecimen_Id",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Biospecimen_Id",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:File_Format",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "File_Format",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
                 }
             ],
             "schema:isPartOf": {
@@ -494,7 +579,7 @@
                     "@id": "bts:CSV/TSV"
                 }
             ],
-            "sms:displayName": "File Format",
+            "sms:displayName": "File_Format",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
@@ -507,7 +592,7 @@
             "rdfs:label": "FASTQ",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
@@ -524,7 +609,7 @@
             "rdfs:label": "BAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
@@ -541,7 +626,7 @@
             "rdfs:label": "CRAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
@@ -558,7 +643,7 @@
             "rdfs:label": "CSV/TSV",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
