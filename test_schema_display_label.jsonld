@@ -20,7 +20,7 @@
                     "@id": "bts:Biospecimen"
                 },
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
                 }
             ],
             "schema:isPartOf": {
@@ -52,19 +52,19 @@
                     "@id": "bts:id"
                 },
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 },
                 {
-                    "@id": "bts:yearOfBirth"
+                    "@id": "bts:Year_Of_Birth"
                 },
                 {
-                    "@id": "bts:diagnosis"
+                    "@id": "bts:Diagnosis"
                 },
                 {
-                    "@id": "bts:weight"
+                    "@id": "bts:Weight"
                 },
                 {
-                    "@id": "bts:date"
+                    "@id": "bts:Date"
                 },
                 {
                     "@id": "bts:Component"
@@ -73,10 +73,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:sex",
+            "@id": "bts:Sex",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "sex",
+            "rdfs:label": "Sex",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -103,10 +103,10 @@
             ]
         },
         {
-            "@id": "bts:yearOfBirth",
+            "@id": "bts:Year_Of_Birth",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "yearOfBirth",
+            "rdfs:label": "Year_Of_Birth",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -123,10 +123,10 @@
             ]
         },
         {
-            "@id": "bts:diagnosis",
+            "@id": "bts:Diagnosis",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "diagnosis",
+            "rdfs:label": "Diagnosis",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -150,10 +150,10 @@
             ]
         },
         {
-            "@id": "bts:weight",
+            "@id": "bts:Weight",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "weight",
+            "rdfs:label": "Weight",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -170,10 +170,10 @@
             ]
         },
         {
-            "@id": "bts:date",
+            "@id": "bts:Date",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "date",
+            "rdfs:label": "Date",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Patient"
@@ -212,7 +212,7 @@
             "rdfs:label": "Female",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 }
             ],
             "schema:isPartOf": {
@@ -229,7 +229,7 @@
             "rdfs:label": "Male",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 }
             ],
             "schema:isPartOf": {
@@ -246,7 +246,7 @@
             "rdfs:label": "Other",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:sex"
+                    "@id": "bts:Sex"
                 }
             ],
             "schema:isPartOf": {
@@ -263,10 +263,10 @@
             "rdfs:label": "Healthy",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:diagnosis"
+                    "@id": "bts:Diagnosis"
                 },
                 {
-                    "@id": "bts:tissueStatus"
+                    "@id": "bts:Tissue_Status"
                 }
             ],
             "schema:isPartOf": {
@@ -283,7 +283,7 @@
             "rdfs:label": "Cancer",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:diagnosis"
+                    "@id": "bts:Diagnosis"
                 }
             ],
             "schema:isPartOf": {
@@ -318,10 +318,10 @@
                     "@id": "bts:id"
                 },
                 {
-                    "@id": "bts:patientId"
+                    "@id": "bts:Patient_Id"
                 },
                 {
-                    "@id": "bts:tissueStatus"
+                    "@id": "bts:Tissue_Status"
                 },
                 {
                     "@id": "bts:Component"
@@ -332,10 +332,10 @@
             ]
         },
         {
-            "@id": "bts:patientId",
+            "@id": "bts:Patient_Id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "patientId",
+            "rdfs:label": "Patient_Id",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Biospecimen"
@@ -349,10 +349,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:tissueStatus",
+            "@id": "bts:Tissue_Status",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "tissueStatus",
+            "rdfs:label": "Tissue_Status",
             "schema:domainIncludes": [
                 {
                     "@id": "bts:Biospecimen"
@@ -382,7 +382,7 @@
             "rdfs:label": "Malignant",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:tissueStatus"
+                    "@id": "bts:Tissue_Status"
                 }
             ],
             "schema:isPartOf": {
@@ -393,10 +393,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:BulkRnaSeq",
+            "@id": "bts:Bulk_Rna_Seq",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "BulkRnaSeq",
+            "rdfs:label": "Bulk_Rna_Seq",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Thing"
@@ -417,13 +417,13 @@
                     "@id": "bts:id"
                 },
                 {
-                    "@id": "bts:filename"
+                    "@id": "bts:Filename"
                 },
                 {
-                    "@id": "bts:biospecimenId"
+                    "@id": "bts:Biospecimen_Id"
                 },
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 },
                 {
                     "@id": "bts:Component"
@@ -432,13 +432,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:filename",
+            "@id": "bts:Filename",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "filename",
+            "rdfs:label": "Filename",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
                 }
             ],
             "schema:isPartOf": {
@@ -451,13 +451,13 @@
             ]
         },
         {
-            "@id": "bts:biospecimenId",
+            "@id": "bts:Biospecimen_Id",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "biospecimenId",
+            "rdfs:label": "Biospecimen_Id",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
                 }
             ],
             "schema:isPartOf": {
@@ -468,13 +468,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:fileFormat",
+            "@id": "bts:File_Format",
             "@type": "rdf:Property",
             "rdfs:comment": "TBD",
-            "rdfs:label": "fileFormat",
+            "rdfs:label": "File_Format",
             "schema:domainIncludes": [
                 {
-                    "@id": "bts:BulkRnaSeq"
+                    "@id": "bts:Bulk_Rna_Seq"
                 }
             ],
             "schema:isPartOf": {
@@ -507,7 +507,7 @@
             "rdfs:label": "FASTQ",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
@@ -524,7 +524,7 @@
             "rdfs:label": "BAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
@@ -541,7 +541,7 @@
             "rdfs:label": "CRAM",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
@@ -558,7 +558,7 @@
             "rdfs:label": "CSV/TSV",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:fileFormat"
+                    "@id": "bts:File_Format"
                 }
             ],
             "schema:isPartOf": {
