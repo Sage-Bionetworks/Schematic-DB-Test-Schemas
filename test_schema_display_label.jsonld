@@ -345,7 +345,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Patient_Id",
-            "sms:required": "sms:false",
+            "sms:required": "sms:true",
             "sms:validationRules": []
         },
         {
@@ -370,7 +370,7 @@
                 }
             ],
             "sms:displayName": "Tissue_Status",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": [
                 "str"
             ]
@@ -464,7 +464,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Biospecimen_Id",
-            "sms:required": "sms:false",
+            "sms:required": "sms:true",
             "sms:validationRules": []
         },
         {
